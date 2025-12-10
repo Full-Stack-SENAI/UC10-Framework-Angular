@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./tarefas.component.css']
 })
 export class TarefasComponent {
+  novaTarefa: string = '';
+  tarefas: string[] = [];
 
+  adicionarTarefa(){
+    if(this.novaTarefa.trim()!== ''){
+      this.tarefas.push(this.novaTarefa);
+      this.novaTarefa = '';
+    }
+  }
+
+  removerTarefa(index: number){
+    this.tarefas.splice(index, 1)
+  }
 }
