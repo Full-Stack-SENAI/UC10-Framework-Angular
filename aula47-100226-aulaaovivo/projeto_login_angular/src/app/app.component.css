@@ -1,0 +1,11 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Garante que o container use a tela toda */
+}
+
+.content {
+  flex: 1;
+  /* Faz esta parte 'esticar' e empurrar o rodapé */
+}
